@@ -5,11 +5,7 @@ USER root
 RUN apt update 
 RUN apt install --yes git
 	
-USER $NB_USER
-RUN apt-get update \
-    && apt-get install -y \
-        nmap \
-        vim
+
 RUN pip install mysql.connector
 RUN pip install nbgitpuller 
 RUN pip install --upgrade nuclio-jupyter 
