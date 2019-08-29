@@ -50,5 +50,3 @@ ENV NBGITPULLER_APP lab
 
 
 
-
-https://github.com/Ashish7989/jupyter.git
