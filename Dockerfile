@@ -69,7 +69,6 @@ matplotlib==3.1.1 \
 ggplot==0.11.5 \
 geoplotlib==0.3.2 \
 seaborn==0.9.0 \
-gnuplot-py==1.8 \
 gnuplotlib==0.31 \
 wxpython==4.0.6 \
 thirft_amqp_tornado==0.2.6 \
