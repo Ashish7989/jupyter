@@ -48,7 +48,6 @@ pyAudioAnalysis==0.2.5 \
 localization==0.1.7 \
 openALPR==1.0.12 \
 pyAudio==0.2.11 \ 
-PIL==1.1.6 \
 pillow==6.1.0 \
 librosa==0.7.0 \
 scikit-image==0.15.0 \
