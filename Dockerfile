@@ -11,7 +11,7 @@ RUN python -m pip install --upgrade pip setuptools wheel
 RUN pip install --upgrade pip
 RUN pip install bqplot
 RUN jupyter nbextension enable --py --sys-prefix bqplot
-RUN jupyter labextension install @lckr/jupyterlab_variableinspector
+
 RUN pip install --no-cache-dir nltk==3.4.5 
 
 
