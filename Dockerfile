@@ -5,7 +5,7 @@ COPY requirements.txt /srv/jupyter
 RUN apt update 
 RUN apt install --yes git
 	
-RUN pip --upgrade 
+
 RUN pip install mysql.connector
 RUN pip install nbgitpuller 
 RUN pip install --upgrade nuclio-jupyter 
