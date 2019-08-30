@@ -25,7 +25,7 @@ RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 RUN pip install bqplot
 RUN jupyter nbextension enable --py --sys-prefix bqplot
 RUN jupyter labextension install @lckr/jupyterlab_variableinspector
-RUN pip3 install --no-cache-dir papermill==1.0.1 \
+RUN pip install --no-cache-dir papermill==1.0.1 \
 nuclio==0.1.0 \
 pykafka==2.8.0 \
 pydruid==0.5.6 \
