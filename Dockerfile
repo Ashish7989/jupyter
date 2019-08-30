@@ -59,7 +59,6 @@ Theano==1.0.4 \
 pytorch==1.0.2 \
 spacy==2.1.8 \
 flair==0.4.3 \
-ml==0.0.0 \
 tensorflow==1.14.0 \
 liblinear==2.11.2 \
 dato-predictive-service-client==1.0.0 \
