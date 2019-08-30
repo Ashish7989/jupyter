@@ -71,7 +71,6 @@ dash==1.2.0 \
 scrapy==1.7.3 \
 selenium==3.141.0 \
 requests==2.22.0 \
-wxPython==4.0.6 \
 socket.py==0.1.0 \
 pytest-socket==0.3.3 \
 sphinx==2.2.0 \
