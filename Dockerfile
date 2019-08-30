@@ -40,7 +40,7 @@ flask==1.1.1 \
 jupyterlab-sql==0.3.0 \
 SQLAlchemy==1.3.8 \
 mysql-connector==2.2.9 \
-py_mysql_connector==0.1 \
+py_mysql_connector==0.1 
 
 
 	
