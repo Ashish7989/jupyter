@@ -4,6 +4,7 @@ USER root
 COPY requirements.txt /srv/jupyter
 RUN apt update 
 RUN apt install --yes git
+RUN python -m pip install --upgrade pip setuptools wheel
 	
 
 RUN pip install mysql.connector
