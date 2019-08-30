@@ -71,9 +71,7 @@ geoplotlib==0.3.2 \
 seaborn==0.9.0 \
 gnuplotlib==0.31 \
 wxpython==4.0.6 \
-thirft_amqp_tornado==0.2.6 \
-thrift_http_tornado==0.1.3 \
-Dash==1.2.0 \
+dash==1.2.0 \
 BeautifulSoup==3.2.1 \
 scrapy==1.7.3 \
 selenium==3.141.0 \
