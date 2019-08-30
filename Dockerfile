@@ -51,7 +51,6 @@ pillow==6.1.0 \
 librosa==0.7.0 \
 scikit-image==0.15.0 \
 imageaI==2.1.4 \
-dlib==19.17.0 \
 nltk==3.4.5 \
 gensim==3.8.0 \
 Theano==1.0.4 \
