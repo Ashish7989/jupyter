@@ -55,9 +55,7 @@ imageaI==2.1.4 \
 nltk==3.4.5 \
 gensim==3.8.0 \
 Theano==1.0.4 \
-pytorch==1.0.2 \
 spacy==2.1.8 \
-flair==0.4.3 \
 tensorflow==1.14.0 \
 liblinear==2.11.2 \
 dato-predictive-service-client==1.0.0 \
@@ -77,7 +75,6 @@ requests==2.22.0 \
 wxPython==4.0.6 \
 socket.py==0.1.0 \
 pytest-socket==0.3.3 \
-Ipython==7.7.0 \
 sphinx==2.2.0 \
 virtualenv==16.7.4 \
 sql2sql==1.0.1 \
