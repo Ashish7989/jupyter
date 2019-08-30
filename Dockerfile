@@ -47,7 +47,6 @@ imutils==0.5.3 \
 pyAudioAnalysis==0.2.5 \
 localization==0.1.7 \
 openALPR==1.0.12 \
-pyAudio==0.2.11 \ 
 pillow==6.1.0 \
 librosa==0.7.0 \
 scikit-image==0.15.0 \
@@ -83,7 +82,6 @@ sphinx==2.2.0 \
 virtualenv==16.7.4 \
 sql2sql==1.0.1 \
 joblib==0.13.2 \
-NumPy==1.17.1 \
 SciPy==1.3.1 \
 pandas==0.25.1 \
 psutil==5.6.3 \
