@@ -38,7 +38,7 @@ plotly==4.1.0 \
 bokeh==1.3.4 \
 flask==1.1.1 \
 jupyterlab-sql==0.3.0 \
-SQLAlchemy==1.3.8 \
+SQLAlchemy==1.3.8 
 
 
 	
