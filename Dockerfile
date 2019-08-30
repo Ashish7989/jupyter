@@ -42,8 +42,12 @@ SQLAlchemy==1.3.8 \
 mysql-connector==2.2.9 \
 py_mysql_connector==0.1 \
 opencv-python==4.1.0.25 \
-pytesseract==0.3.0 \
-geopy==1.20.0 
+pytesseract==0.3.0\
+geopy==1.20.0 \
+imutils==0.5.3 \
+pyAudioAnalysis==0.2.5 \
+localization==0.1.7 
+
 
 
 	
