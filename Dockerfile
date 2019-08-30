@@ -12,7 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install bqplot
 RUN jupyter nbextension enable --py --sys-prefix bqplot
 
-RUN pip install --no-cache-dir opencv-python==4.1.0.25
+RUN pip install --no-cache-dir pyAudioAnalysis==0.2.5
 
 
 
