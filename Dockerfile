@@ -91,7 +91,6 @@ pyinstaller==3.5 \
 wave==0.0.2 \
 filterpy==1.4.5 \ 
 Pickle5==0.0.8 \
-time==1.0.0 \
 Datetime==4.3 \
 Glob2==0.7 \
 Argparse==1.4.0 \
