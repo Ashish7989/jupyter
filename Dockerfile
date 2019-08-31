@@ -29,9 +29,6 @@ RUN jupyter labextension install @jupyterlab/toc
 RUN jupyter labextension install @jupyterlab/celltags
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-COPY requirements.txt /srv/jupyterhub
-# Install python packages specified in requirements.txt
-RUN pip install  -r requirements.txt
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 RUN pip install --no-cache-dir papermill==1.0.1 \
