@@ -48,7 +48,6 @@ openALPR==1.0.12 \
 Pillow==6.1.0 \
 imageai==2.1.4 \
 SpaCy==2.1.8 \
-flair==0.4.3 \
 tensorflow==1.14.0 \
 liblinear==2.11.2 \
 statsmodels==0.10.1 \ 
