@@ -58,7 +58,6 @@ seaborn==0.9.0 \
 Dash==1.2.0 \
 scrapy==1.7.3 \ 
 selenium==3.141.0 \ 
-Ipython==7.8.0 \ 
 sphinx==2.2.0 \ 
 virtualenv2==0.0.1 \ 
 joblib==0.13.2 \
