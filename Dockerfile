@@ -1,25 +1,38 @@
 FROM jupyter/all-spark-notebook:2ce7c06a61a1
 
 USER root
-
-RUN apt update 
+RUN apt update
 RUN apt install --yes git
-	
+
 USER $NB_USER
+
+
+# Copy the current directory contents into the container at /srv/jupyterhub
+
+# Change directory to /opt/conda and install jupyterlab
+WORKDIR  /opt/conda
+RUN conda install -y -c conda-forge jupyterlab
+RUN pip install --upgrade pip
+# Install the additional lab extensions
 RUN pip install --upgrade pip
 RUN pip install mysql.connector
-RUN pip install nbgitpuller 
-RUN pip install --upgrade nuclio-jupyter 
+RUN pip install nbgitpuller
+RUN pip install --upgrade nuclio-jupyter
 RUN pip install textblob
 RUN jupyter labextension install @krassowski/jupyterlab_go_to_definition
-RUN jupyter serverextension enable --py nbgitpuller --sys-prefix 
-RUN jupyter labextension install @jupyterlab/git  
-RUN pip install --upgrade jupyterlab-git 
+RUN jupyter serverextension enable --py nbgitpuller --sys-prefix
+RUN jupyter labextension install @jupyterlab/git
+RUN pip install --upgrade jupyterlab-git
 RUN jupyter serverextension enable --py jupyterlab_git
 RUN jupyter labextension install jupyterlab-drawio
 RUN jupyter labextension install @jupyterlab/toc
-RUN jupyter labextension install jupyterlab_voyager
 RUN jupyter labextension install @jupyterlab/celltags
+RUN pip install jupyterlab_sql
+RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
+COPY requirements.txt /srv/jupyterhub
+COPY jupyterhub_config.py /srv/jupyterhub
+# Install python packages specified in requirements.txt
+RUN pip install  -r requirements.txt
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 RUN pip install --no-cache-dir papermill==1.0.1 \
