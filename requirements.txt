@@ -51,7 +51,6 @@ twilio==6.29.4
 playsound==1.2.2 
 Numba==0.45.1 
 django==2.2.4
-jinja2==1.2 
 openpyxl==2.6.3
 imutils==0.5.3 
 thrift==0.11.0 
