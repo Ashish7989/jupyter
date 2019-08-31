@@ -22,8 +22,6 @@ RUN jupyter labextension install jupyterlab_voyager
 RUN jupyter labextension install @jupyterlab/celltags
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-RUN pip install bqplot
-RUN jupyter nbextension enable --py --sys-prefix bqplot
 RUN pip install --no-cache-dir papermill==1.0.1 \
 nuclio==0.1.0 \
 pykafka==2.8.0 \ 
