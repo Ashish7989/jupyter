@@ -30,7 +30,6 @@ RUN jupyter labextension install @jupyterlab/celltags
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 COPY requirements.txt /srv/jupyterhub
-COPY jupyterhub_config.py /srv/jupyterhub
 # Install python packages specified in requirements.txt
 RUN pip install  -r requirements.txt
 RUN pip install jupyterlab_sql
