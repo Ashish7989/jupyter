@@ -6,7 +6,7 @@ RUN apt update
 RUN apt install --yes git
 	
 USER $NB_USER
-
+RUN pip install --upgrade pip
 RUN pip install mysql.connector
 RUN pip install nbgitpuller 
 RUN pip install --upgrade nuclio-jupyter 
