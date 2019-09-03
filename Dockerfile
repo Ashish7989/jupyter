@@ -10,17 +10,14 @@ USER $NB_USER
 # Copy the current directory contents into the container at /srv/jupyterhub
 
 # Change directory to /opt/conda and install jupyterlab
-WORKDIR  /opt/conda
-RUN conda install -y -c conda-forge jupyterlab
-RUN pip install --upgrade pip
 # Install the additional lab extensions
 RUN pip install --upgrade pip
 RUN pip install mysql.connector
-RUN pip install nbgitpuller
-RUN pip install --upgrade nuclio-jupyter
 RUN pip install textblob
-RUN jupyter labextension install @krassowski/jupyterlab_go_to_definition
+RUN pip install --upgrade nuclio-jupyter
+RUN pip install nbgitpuller
 RUN jupyter serverextension enable --py nbgitpuller --sys-prefix
+RUN jupyter labextension install @krassowski/jupyterlab_go_to_definition
 RUN jupyter labextension install @jupyterlab/git
 RUN pip install --upgrade jupyterlab-git
 RUN jupyter serverextension enable --py jupyterlab_git
