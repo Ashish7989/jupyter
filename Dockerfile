@@ -29,8 +29,7 @@ RUN jupyter labextension install @jupyterlab/toc
 RUN jupyter labextension install @jupyterlab/celltags
 RUN pip install jupyterlab_sql
 RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-RUN pip install jupyterlab_sql
-RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
+RUN jupyter labextension install @lckr/jupyterlab_variableinspector
 RUN pip install --no-cache-dir papermill==1.0.1 \
 nuclio==0.1.0 \
 pykafka==2.8.0 \ 
