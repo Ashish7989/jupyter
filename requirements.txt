@@ -19,7 +19,7 @@ geopy==1.20.0
 pyAudioAnalysis==0.2.5 
 localization==0.1.7 
 openALPR==1.0.12 
-Pillow==6.1.0
+Pillow==6.2.0
 imageai==2.1.4 
 SpaCy==2.1.8 
 flair==0.4.3 
