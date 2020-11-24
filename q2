@@ -1,0 +1,16 @@
+maxSessionDuration = 60 * 30 # Max session duration of 30 minutes.
+client_fp_time_window = Window.partitionBy("userid").orderBy("timestamp")
+
+rowsWithSessionIds = temp_df.select("timestamp", "userid", lag("timestamp").over(client_fp_time_window).alias("prevEvTimestamp"))
+
+new_rowsWithSessionIds=rowsWithSessionIds.select("userid", "timestamp","prevEvTimestamp",
+            when(
+              (col("timestamp").cast('long') - col("prevEvTimestamp").cast('long')) < maxSessionDuration, 0).otherwise(1).alias("isNewSession"))
+              
+              
+calsessionid=new_rowsWithSessionIds.select("userid", "timestamp", "prevEvTimestamp","isNewSession", sum("isNewSession").over(client_fp_time_window).alias("sessionId"))
+
+result=calsessionid.groupBy("userid", "sessionId").agg(min("timestamp").alias("startTime"), max("timestamp").alias("endTime"),
+                                                count("*").alias("No of sesssion"))
+                                            
+                                            
