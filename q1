@@ -1,0 +1,21 @@
+from pyspark.sql.functions import *
+from pyspark.sql.window import Window
+
+temp = [
+  ('2018-01-01 11:00:00', 'u1'),
+  ('2018-01-01 12:00:00', 'u1'),
+  ('2018-01-01 11:00:00', 'u2'),
+  ('2018-01-02 11:00:00', 'u2'),
+  ('2018-01-01 12:15:00', 'u1')
+  
+]
+temp_df = spark.createDataFrame(temp, ["timestamp", "userid"])
+
+
+k=temp_df.toPandas().to_csv('mycsv.csv')
+
+
+temp_df.write.format("parquet").mode("append").option("compress","gzip").partitionBy("userid").save("hdfs:///user/ashish.mathur/parque_session")
+
+
+
