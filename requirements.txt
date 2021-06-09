@@ -50,7 +50,7 @@ argparse==1.4.0
 twilio==6.29.4 
 playsound==1.2.2 
 Numba==0.45.1 
-django==2.2.4
+django==2.2.22
 openpyxl==2.6.3
 imutils==0.5.3 
 thrift==0.11.0 
